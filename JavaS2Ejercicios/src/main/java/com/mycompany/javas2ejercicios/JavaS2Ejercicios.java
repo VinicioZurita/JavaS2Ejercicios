@@ -15,13 +15,24 @@ public class JavaS2Ejercicios {
 public static int num1,num2;
 public static Scanner scTeclado = new Scanner (System.in);
     public static void main(String[] args) {
-        
+        ingresoNumeros();
+        MenuPrincipal();
     }
+    //ingreso
+     public static void ingresoNumeros(){
+       
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Ingrese el primer número");
+        num1=sc.nextInt();
+        System.out.println("Ingrese el segundo número");
+        do{
+            System.out.println("Ingrese número diferente de cero.");
+            num2=sc.nextInt();
+        }while (num2==0);
+        
+   }
     //Menu
     public static void MenuPrincipal(){
-    
-     
-     
      int op;
     
         do { 
@@ -53,4 +64,20 @@ public static Scanner scTeclado = new Scanner (System.in);
     int resultado= numero1+numero2; 
     System.out.println("La suma es: "+ resultado);
     }
+    //resta
+    public static void resta(int numero1,int numero2){
+    int resultado= numero1-numero2; 
+    System.out.println("La suma es: "+ resultado);
+    }
+    //multiplicacion
+    public static void multiplicacion(int numero1,int numero2){
+    int resultado= numero1*numero2; 
+    System.out.println("La suma es: "+ resultado);
+    }
+    //division
+    public static void division(int numero1,int numero2){
+    int resultado= numero1/numero2; 
+    System.out.println("La suma es: "+ resultado);
+    }
+    
 }
