@@ -26,8 +26,10 @@ public static Scanner scTeclado = new Scanner (System.in);
         num1=sc.nextInt();
         System.out.println("Ingrese el segundo número");
         do{
-            System.out.println("Ingrese número diferente de cero.");
             num2=sc.nextInt();
+            if (num2==0) {
+                System.out.println("Ingrese número diferente de cero.");
+            }
         }while (num2==0);
         
    }
