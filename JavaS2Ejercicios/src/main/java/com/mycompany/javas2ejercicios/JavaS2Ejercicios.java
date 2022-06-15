@@ -20,7 +20,8 @@ public static Scanner scTeclado = new Scanner (System.in);
     }
     //ingreso
      public static void ingresoNumeros(){
-       
+         System.out.println("Realizar un programa en Java que permita ingresar 2 números con el objetivo de\n" +
+"operarlos como en una calculadora, utilizando funciones y estructuras básicas y\noperandos.\n**********************************");
         Scanner sc=new Scanner(System.in);
         System.out.println("Ingrese el primer número");
         num1=sc.nextInt();
